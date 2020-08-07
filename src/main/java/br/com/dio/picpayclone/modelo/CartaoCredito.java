@@ -28,6 +28,38 @@ public class CartaoCredito extends EntidadeBase {
 	@Column(name = "CC_NUMERO", nullable = false)
 	private String numero;
 
+	public String getNumero() {
+		return numero;
+	}
+
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+
+	public BandeiraCartao getBandeira() {
+		return bandeira;
+	}
+
+	public void setBandeira(BandeiraCartao bandeira) {
+		this.bandeira = bandeira;
+	}
+
+	public String getNumeroToken() {
+		return numeroToken;
+	}
+
+	public void setNumeroToken(String numeroToken) {
+		this.numeroToken = numeroToken;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
 	@Enumerated(EnumType.STRING)
 	@Column(name = "CC_BANDEIRA", nullable = false)
 	private BandeiraCartao bandeira;
